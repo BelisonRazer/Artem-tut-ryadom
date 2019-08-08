@@ -1,0 +1,30 @@
+{
+  "name": "atr_root",
+  "version": "1.0.0",
+  "description": "ART building",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BelisonRazer/Artem-tut-ryadom.git"
+  },
+  "keywords": [
+    "css",
+    "html",
+    "javascript",
+    "webpack",
+    "scss"
+  ],
+  "author": "Sergey Chertkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BelisonRazer/Artem-tut-ryadom/issues"
+  },
+  "homepage": "https://github.com/BelisonRazer/Artem-tut-ryadom#readme",
+  "devDependencies": {
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  }
+}
