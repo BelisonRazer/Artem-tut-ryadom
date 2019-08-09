@@ -2,11 +2,11 @@
     width: 100px;
     height: 36px;
 
-    border: 1px solid var(--black-color);
+    border: 1px solid $black-color;
     border-radius: 4px;
 
-    background-color: var(--white-color);
-    color: var(--black-color);
+    background-color: $white-color;
+    color: $black-color;
 
     font-family: 500 DINPro-medium sans-serif;
     font-size: 14px;
