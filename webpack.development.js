@@ -8,15 +8,14 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },
     resolve: {
-        extensions: ['.js', '.scss', '.otf'],
+        extensions: ['.js', '.scss', '.otf', '.OTF'],
         modules: [
             __dirname,
             path.resolve(__dirname, 'node_modules')
         ]
     },
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.(js|jsx)$/,
                 exclude: /(node_modules|bower_components)/,
                 use: {
@@ -33,6 +32,16 @@ module.exports = {
                     "css-loader", // translates CSS into CommonJS
                     "sass-loader" // compiles Sass to CSS, using Node Sass by default
                 ]
+            },
+            {
+                test: /\.(woff(2)?|ttf|eot|svg|otf|OTF)(\?v=\d+\.\d+\.\d+)?$/,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: 'fonts/'
+                    }
+                }]
             }
         ]
     }
